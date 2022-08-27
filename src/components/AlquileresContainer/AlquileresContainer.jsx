@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import propiedades from "../../Api/Api.json";
+
+//  En este componente voy a retornar la grilla de alquileres
 
 const AlquileresContainer = () => {
-  const [alquileres, setAlquileres] = useState([]);
+  const [alquileres, setAlquileres] = useState(propiedades);
   const [loading, setLoading] = useState(false);
+  console.log(propiedades);
 
-  useEffect(() => {
-    axios
-      .get("https://api.github.com/users")
-      .then((res) => setAlquileres(res.data.login));
-    console.log(alquileres);
-  }, []);
-
-  return <div>AlquileresContainer</div>;
+  return (
+    <div>
+      <h1>Mapeo</h1>
+      {propiedades.map((propiedad) => {
+        return <h2>{propiedad.tipo}</h2>;
+      })}
+    </div>
+  );
 };
 
 export default AlquileresContainer;
