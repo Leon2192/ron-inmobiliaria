@@ -11,7 +11,9 @@ import SideBar from "../../components/SideBar/SideBar";
 const Home = () => {
   return (
     <>
-      <Navigation />
+      <NavBar />
+      <br />
+      <br />
       <Search />
       <Main />
       <About />

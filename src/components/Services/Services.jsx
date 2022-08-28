@@ -48,7 +48,7 @@ const Services = () => {
               alt={property.imageAlt}
               objectFit="cover"
               borderRadius="10px"
-              h="75%"
+              h="330px"
             />
             <Box p="6">
               <Box display="flex" alignItems="baseline">

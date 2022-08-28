@@ -5,6 +5,13 @@ const config = {
   useSystemColorMode: true,
 };
 
+const breakpoints = {
+  sm: "40em",
+  md: "52em",
+  lg: "64em",
+  xl: "80em",
+};
+
 const colors = {
   primary: "#07A533",
   secondary: "#FF6F91",
@@ -52,6 +59,7 @@ const Heading = {
 
 export const theme = extendTheme({
   fonts,
+  breakpoints,
   config,
   colors,
   components: { Button, Heading, VStack },

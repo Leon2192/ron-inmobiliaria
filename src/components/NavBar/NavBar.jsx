@@ -1,64 +1,114 @@
-import React from "react";
-import "./NavBar.css";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useColorMode, Box, IconButton, Flex } from "@chakra-ui/react";
+import {
+  useColorMode,
+  Box,
+  IconButton,
+  Flex,
+  Switch,
+  Button,
+} from "@chakra-ui/react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import logo from "../Assets/Img/logo.png";
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
+  const [display, setDisplay] = useState("none");
 
   return (
     <>
-      <div className="container">
-        <nav className="nav-main">
-          <img src={logo} alt="RLogo" className="nav-logo" />
-          <ul className="nav-menu">
+      <Flex>
+        <Flex pos="fixed" top="1rem" right="1rem" align="center">
+          <Flex display={["none", "none", "flex", "flex"]}>
             <Link to="/">
-              <li>
-                <a href="#">Inicio</a>
-              </li>
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Home
+              </Button>
             </Link>
             <Link to="/about">
-              <li>
-                <a href="#">Sobre nosotros</a>
-              </li>
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Nosotros
+              </Button>
             </Link>
             <Link to="/alquileres">
-              <li>
-                <a href="#">Alquileres</a>
-              </li>
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Alquileres
+              </Button>
             </Link>
             <Link to="/venta">
-              <li>
-                <a href="#">Venta</a>
-              </li>
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Ventas
+              </Button>
             </Link>
             <Link to="/contacto">
-              <li>
-                <a href="#">Contacto</a>
-              </li>
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Contacto
+              </Button>
             </Link>
-          </ul>
-          <ul className="nav-menu-right">
-            <li>
-              <a href="#">
-                {" "}
-                <i className="fas fa-search"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <Box boxSize="100%" w="100%">
-        <IconButton
-          icon={isDark ? <FaSun /> : <FaMoon />}
-          isRound="true"
-          onClick={toggleColorMode}
-          alignSelf="flex-end"
-        ></IconButton>
-      </Box>
+          </Flex>
+          <IconButton
+            aria-label="Open Menu"
+            size="lg"
+            mr={2}
+            icon={<HamburgerIcon />}
+            display={["flex", "flex", "none", "none"]}
+            onClick={() => setDisplay("flex")}
+          />
+          <Switch color="green" isChecked={isDark} onChange={toggleColorMode} />
+        </Flex>
+        <Flex
+          w="100vw"
+          bgColor="gray.500"
+          zIndex={20}
+          h="100vh"
+          pos="fixed"
+          top="0"
+          left="0"
+          overflow="auto"
+          flexDir="column"
+          display={display}
+        >
+          <Flex justify="flex-end">
+            <IconButton
+              mt={2}
+              mr={2}
+              aria-label="Close Menu"
+              size="lg"
+              icon={<CloseIcon />}
+              onClick={() => setDisplay("flex")}
+            />
+          </Flex>
+          <Flex flexDir="column" align="center">
+            <Link to="/">
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Home
+              </Button>
+            </Link>
+            <Link to="/about">
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Nosotros
+              </Button>
+            </Link>
+            <Link to="/alquileres">
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Alquileres
+              </Button>
+            </Link>
+            <Link to="/venta">
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Ventas
+              </Button>
+            </Link>
+            <Link to="/contacto">
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+                Contacto
+              </Button>
+            </Link>
+          </Flex>
+        </Flex>
+      </Flex>
     </>
   );
 };
