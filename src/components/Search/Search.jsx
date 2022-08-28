@@ -6,12 +6,14 @@ import {
   Stack,
   InputGroup,
   InputLeftAddon,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 const Search = () => {
   const [value, setValue] = useState("");
   const [userData, setUserData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   const onChangeValue = (e) => {
     setValue(e.target.value);
@@ -34,9 +36,9 @@ const Search = () => {
   };
 
   return (
-    <Center>
-      <Stack p="30px">
-        <InputGroup borderColor="warning" fontWeight="bold">
+    
+      <Stack p="30px" w={isNotSmallerScreen ? "100%" : "repeat(1, 1fr)"}>
+        <InputGroup borderColor="warning" fontWeight="bold" display={isNotSmallerScreen ? "flex" : "block"}>
           <InputLeftAddon
             children="Alquiler"
             border="2px solid"
@@ -65,7 +67,7 @@ const Search = () => {
           />
         </InputGroup>
       </Stack>
-    </Center>
+  
   );
 };
 

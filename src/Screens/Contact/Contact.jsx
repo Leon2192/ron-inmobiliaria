@@ -3,12 +3,12 @@ import React from "react";
 import ContactBanner from "../../components/ContactBanner/ContactBanner";
 import Footer from "../../components/Footer/Footer";
 import Formulario from "../../components/Form/Formulario";
-import NavBar from "../../components/NavBar/NavBar";
+import Navigation from "../../components/Navigation/Navigation";
 
 const Contact = () => {
   return (
     <div>
-      <NavBar />
+     <Navigation />
       <br />
       <Heading>Contacto</Heading>
       <br />

@@ -5,10 +5,9 @@ import { Box, Center, Heading, Text, Stack, Image } from "@chakra-ui/react";
 
 //  En este componente voy a retornar la grilla de alquileres
 
-const AlquileresContainer = () => {
+const VentaContainer = () => {
   const [loading, setLoading] = useState(false);
   console.log(propiedades);
-
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
@@ -98,4 +97,4 @@ const AlquileresContainer = () => {
   );
 };
 
-export default AlquileresContainer;
+export default VentaContainer;

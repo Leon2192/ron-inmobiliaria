@@ -6,11 +6,11 @@ import Main from "../../components/Main/Main";
 import About from "../../components/About/About";
 import Services from "../../components/Services/Services";
 import Navigation from "../../components/Navigation/Navigation";
+import SideBar from "../../components/SideBar/SideBar";
 
 const Home = () => {
   return (
     <>
-      <NavBar />
       <Navigation />
       <Search />
       <Main />
