@@ -7,8 +7,8 @@ import {
   Flex,
   Switch,
   Button,
+  Avatar,
 } from "@chakra-ui/react";
-import { FaSun, FaMoon } from "react-icons/fa";
 import logo from "../Assets/Img/logo.png";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
@@ -20,6 +20,9 @@ const NavBar = () => {
   return (
     <>
       <Flex>
+        <Flex top="1rem" right="1rem" align="center" h="10vh" ml="20px">
+          <Avatar src={logo} />
+        </Flex>
         <Flex pos="fixed" top="1rem" right="1rem" align="center">
           <Flex display={["none", "none", "flex", "flex"]}>
             <Link to="/">
@@ -32,12 +35,12 @@ const NavBar = () => {
                 Nosotros
               </Button>
             </Link>
-            <Link to="/alquileres">
+            <Link to="/category/Alquiler">
               <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
                 Alquileres
               </Button>
             </Link>
-            <Link to="/venta">
+            <Link to="/category/Venta">
               <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
                 Ventas
               </Button>

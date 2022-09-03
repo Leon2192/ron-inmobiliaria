@@ -1,0 +1,115 @@
+const Props = [
+  {
+    id: 1,
+    tipo: "Alquiler",
+    localidad: "Buenos Aires",
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 2,
+    tipo: "Alquiler",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 3,
+    tipo: "Venta",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 4,
+    tipo: "Alquiler",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 5,
+    tipo: "Venta",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 6,
+    tipo: "Venta",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 7,
+    tipo: "Alquiler",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 8,
+    tipo: "Venta",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 9,
+    tipo: "Alquiler",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 10,
+    tipo: "Venta",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 11,
+    tipo: "Alquiler",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 12,
+    tipo: "Venta",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 13,
+    tipo: "Alquiler",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+  {
+    id: 14,
+    tipo: "Venta",
+    localidad: "CABA",
+    precio: 175000,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg",
+  },
+];
+
+export default Props;

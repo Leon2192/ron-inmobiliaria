@@ -2,7 +2,7 @@ import { Heading } from "@chakra-ui/react";
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
-import Navigation from "../../components/Navigation/Navigation";
+import PropiedadesContainer from "../../components/PropiedadesContainer/PropiedadesContainer";
 import Search from "../../components/Search/Search";
 import VentaContainer from "../../components/VentaContainer/VentaContainer";
 
@@ -16,7 +16,7 @@ const Venta = () => {
       <br />
       <Heading>Nuestras propiedades en venta</Heading>
       <br />
-      <VentaContainer />
+      <PropiedadesContainer />
       <br />
       <Footer />
     </div>

@@ -5,8 +5,7 @@ import Search from "../../components/Search/Search";
 import Main from "../../components/Main/Main";
 import About from "../../components/About/About";
 import Services from "../../components/Services/Services";
-import Navigation from "../../components/Navigation/Navigation";
-import SideBar from "../../components/SideBar/SideBar";
+import PropiedadesContainer from "../../components/PropiedadesContainer/PropiedadesContainer";
 
 const Home = () => {
   return (
@@ -17,6 +16,9 @@ const Home = () => {
       <Search />
       <Main />
       <About />
+      <br />
+      <PropiedadesContainer />
+      <br />
       <Services />
       <Footer />
     </>
