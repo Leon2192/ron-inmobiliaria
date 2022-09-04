@@ -3,6 +3,7 @@
     "id": 1,
     "tipo": "Alquiler",
     "localidad": "Buenos Aires",
+    "precio": 175000,
     "image": "https://http2.mlstatic.com/D_NQ_NP_928020-MLA51152670657_082022-W.jpg"
   },
   {
